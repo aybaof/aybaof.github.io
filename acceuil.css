@@ -375,10 +375,10 @@ form
 input
 {
     display: block;
-    border-radius: 0 0 1em 1em;
+    border-radius: 0 1em 1em 1em;
     border: none;
     text-align: left;
-    height: 1.5em;
+    height: 2em;
 }
 footer svg 
 {
@@ -396,7 +396,7 @@ textarea
 {
     margin: 3vh 0;
     height: 15vh;
-    border-radius: 0 0 1em 1em;
+    border-radius: 0 1em 1em 1em;
     border: none;
     text-align: left;
     resize: none;
