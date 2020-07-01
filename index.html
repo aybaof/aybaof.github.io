@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil GETABLOCK</title>
+    <title>Barakat</title>
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Nunito:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="acceuil.css">
 </head>
@@ -20,7 +20,7 @@
                 <span><a href="project.html">Projet</a><span>
                 <span><a href="#contact">Contact</a><span>
             </nav>
-            <div id="myNav" class="overlay nav">
+            <div id="myNav" class="overlay">
                 <!-- Button to close the overlay navigation -->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
                     X
@@ -28,7 +28,7 @@
             
                 <!-- Overlay content -->
                 <div id="burger">
-                <div class="overlay-content">
+                <div class="overlay-nav">
                     <ul class="Menumobile">
                         <li><a href="project.html">Projet</a></li>
                         <li><a href="#contact" onclick="closeNav()">Contact</a></li>
@@ -52,14 +52,46 @@
                 </svg>
             </span>
             <script>
-                function openNav() 
+                openNav = () =>
                 {
                     document.getElementById("myNav").style.width = "100%";
                 }
             
-                function closeNav()
+                closeNav = () =>
                 {
                     document.getElementById("myNav").style.width = "0px";
+                }
+                openContext = () =>
+                {
+                    document.getElementById("contract").style.width = "100%";
+                }
+                closeContext =() =>
+                {
+                    document.getElementById("contract").style.width = "0px";
+                }
+                openGraphic = () =>
+                {
+                    document.getElementById("graphic").style.width = "100%";
+                }
+                closeGraphic = () =>
+                {
+                    document.getElementById("graphic").style.width = "0px";
+                }
+                openMapAndWireFrame = () =>
+                {
+                    document.getElementById("mapAndWireframe").style.width ="100%";
+                }
+                closeMapAndWireFrame = () =>
+                {
+                    document.getElementById("mapAndWireframe").style.width = "0px";
+                }
+                openDeveloppement = () =>
+                {
+                    document.getElementById('bipbip').style.width ="100%";
+                }
+                closeDeveloppement = () =>
+                {
+                    document.getElementById('bipbip').style.width ="0px";
                 }
             </script>
         </div>
@@ -72,8 +104,58 @@
         You will find on this website some logo and layout pages i have been working on.
         </p>
     </main>
+    <div class="overlay" id="contract">
+        <p class="context">
+            A contractual contract is necessary for both parties. It clears out legal terms, timeline, pricing, scope of design/developpement work, functionnalities and aiming stategies as well as many other part.
+        </p>
+        <p class="context">
+            Designers and Buiseness owner gain great benefit from it. First of all, it sets a clear goal beetwen the parties.
+            Services must be listed out as well as architecture of the website, so the pricing is adequate to the task.
+            A timeline of develeveries(prototyping being a part of it) should be declare.
+        </p>
+        <p class="context">
+            Legal term like Copyright; intellectual property, confidentialities and dispute negociation must be a part of it.
+        </p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeContext()">
+            X
+        </a>
+    </div>
+    <div class="overlay" id="graphic">
+        <p class="context">
+            Why a graphic chart would you ask ? Its a important part of the identity of a buiseness, and make a sucessfull communication around it.
+        </p>
+        <p class="context">
+            From the choice of colours,typologies to the logo design, the graphic chart is the insight of moral of the entreprise.
+        </p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeGraphic()">
+            X
+        </a>
+    </div>
+    <div class="overlay" id="mapAndWireframe">
+        <p class="context">
+            Site map and wireframe is the first prototype a Web developper will develivers to the client, and it make it easier to get the result expected.
+        </p>
+        <p class="context">
+            It is also the moment when both parties should see each point of view and list out what to keep and what to let away.
+        </p>
+        <p class="context">
+            A memorable website, with intuitive design, is the best way to prove your profesionalism.
+            Lets keep it simple and usefull.
+        </p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMapAndWireFrame()">
+            X
+        </a>
+    </div>
+    <div class="overlay" id="bipbip">
+            <p class="context">
+                *bip *bop
+            </p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeDeveloppement()">
+            X
+        </a>
+    </div>
     <div class="fitcontent">
-        <a href=#>
+        <a onclick="openContext()">
             <div class="w-80 flex justify right line fadeInRight">
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" aspectratiopreserve="xminymin">
@@ -117,7 +199,7 @@
             <h2>Establishing a contractual requirement</h2>
             </div>
         </a>
-            <a href=#>
+            <a onclick="openGraphic()">
                 <div class="w-100 flex justify left line fadeInLeft">
                 <h2>Making a graphic chart</h2>
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -152,7 +234,7 @@
                 </svg>
             </div>
         </a>
-            <a href=#>
+            <a onclick="openMapAndWireFrame()">
                 <div class="w-80 flex justify right line fadeInRight">
                 <svg version="1.1" id="Outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -188,7 +270,7 @@
                 <h2>Site map and wireframe realisation</h2>
             </div>
         </a>
-            <a href="#">
+            <a onclick="openDeveloppement()">
                 <div class="w-80 flex justify left line fadeInLeft">
                 <h2>Front-end developpement</h2>
                 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -214,7 +296,7 @@
                 </svg>
             </div>
         </a>
-            <a href="#">
+            <a onclick="openDeveloppement()">
                 <div class="w-80 flex justify right line fadeInRight">
                 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">

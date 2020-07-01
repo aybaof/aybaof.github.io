@@ -95,7 +95,7 @@ header span a
     transition: 0.5s;
 }
   
-  .overlay-content 
+.overlay-nav 
 {
     position: relative;
     top: 25%;
@@ -105,7 +105,7 @@ header span a
     color: teal;
 }
   
-  .overlay a 
+.overlay a 
 {
     padding: 8px;
     text-decoration: none;
@@ -116,7 +116,7 @@ header span a
     list-style-type: none;
 }
   
-  .overlay a:hover,.overlay a:focus 
+.overlay a:hover,.overlay a:focus 
 {
     color: #ffffff;
 }
@@ -146,6 +146,11 @@ header span a
 {
     justify-content: right;
 }
+.justifyCenter
+{
+    justify-content: center;
+}
+
 header h1
 {
     color: black;
@@ -167,12 +172,14 @@ header ul
 {
     list-style-type: none
 }
-main{
+main
+{
     width: 80%;
     padding: 5px;
     margin: 2rem auto;
 }
-h2{
+h2
+{
     text-align: center;
 }
 div.flex h2
@@ -407,6 +414,16 @@ input:hover,input:focus , button:hover,button:focus , textarea:hover,textarea:fo
     cursor: pointer;
 
 }
-
+.context
+{
+    color: white;
+    font-size: 1.5em;
+    width: 70%;
+    margin: 1em;
+}
+.meme
+{
+    margin: 25%;
+}
 
 
