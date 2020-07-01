@@ -215,7 +215,7 @@ header a
      text-decoration: none;
      color: black;
 }
-body img 
+.svgwidth 
 {
     width: 15vw;
     margin: 8vh;
@@ -317,7 +317,7 @@ body img
     {
         justify-content: center;
     }
-    body img 
+    .svgwidth 
     {
         width: 30vw;
     }
