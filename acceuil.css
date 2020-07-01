@@ -378,6 +378,7 @@ input
     border-radius: 0 0 1em 1em;
     border: none;
     text-align: left;
+    height: 1.5em;
 }
 footer svg 
 {
